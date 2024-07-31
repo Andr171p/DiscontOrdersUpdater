@@ -2,8 +2,8 @@ import aiohttp
 
 import asyncio
 
-from backend.server1C.webhook_api import WebHookRequestsHeaders
-from backend.server1C.webhook_api import WebHookAPI
+from server1C.webhook_api import WebHookRequestsHeaders
+from server1C.webhook_api import WebHookAPI
 
 from misc.format_data import format_phone_number
 
@@ -89,5 +89,5 @@ class Server1CRequests:
         return response
 
 
-r = asyncio.run(Server1CRequests().get_orders_response())
-print(r)
+'''r = asyncio.run(Server1CRequests().get_orders_response())
+print(r)'''

@@ -2,7 +2,7 @@ import asyncio
 
 import json
 
-from backend.server1C.webhook_exchange import Server1CRequests
+from server1C.webhook_exchange import Server1CRequests
 
 from misc.format_data import format_phone_number, format_order_number
 from misc.format_data import format_order_date, format_order_time, format_trade_card
