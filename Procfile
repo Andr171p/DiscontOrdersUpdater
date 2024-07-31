@@ -1,0 +1,1 @@
+DiscontOrdersUpdater: python main.py

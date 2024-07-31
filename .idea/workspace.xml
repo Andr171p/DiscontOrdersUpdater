@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/order_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/order_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/db_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/db_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/db_connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/db_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/db_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/orders_db/db_orders_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/orders_db/db_orders_manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/orders_db/db_orders_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/orders_db/db_orders_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/orders_db/db_update_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/orders_db/db_update_orders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/format_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/row_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/row_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server1C/webhook_exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/server1C/webhook_exchange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warns.py" beforeDir="false" afterPath="$PROJECT_DIR$/warns.py" afterDir="false" />
+    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0 updater">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +166,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715094246868</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.0 updater">
+      <option name="closed" value="true" />
+      <created>1722458869124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722458869124</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.0 updater" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 updater" />
   </component>
 </project>
