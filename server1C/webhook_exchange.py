@@ -7,6 +7,11 @@ from server1C.webhook_api import WebHookAPI
 
 from misc.format_data import format_phone_number
 
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
+
 
 class Server1CRequests:
     def __init__(self):
