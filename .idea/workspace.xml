@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0 updater">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0.4 updater+Procfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/order_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/order_status.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,11 +174,47 @@
       <option name="project" value="LOCAL" />
       <updated>1722458869124</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0.1 updater">
+      <option name="closed" value="true" />
+      <created>1722459241817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722459241817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.0.2 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1722459334825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722459334825</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.0.3 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1722459437932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722459437932</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.0.4 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1722544552530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722544552530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0 updater" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0 updater" />
+    <MESSAGE value="1.0.1 updater" />
+    <MESSAGE value="1.0.2 updater+Procfile" />
+    <MESSAGE value="1.0.3 updater+Procfile" />
+    <MESSAGE value="1.0.4 updater+Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.4 updater+Procfile" />
   </component>
 </project>
