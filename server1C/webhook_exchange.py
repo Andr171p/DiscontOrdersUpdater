@@ -10,18 +10,22 @@ from misc.format_data import format_phone_number
 import logging
 
 
-logging.basicConfig(level=logging.INFO)
-
-
 class Server1CRequests:
     def __init__(self):
         self.url = WebHookRequestsHeaders.url
         self.headers = WebHookRequestsHeaders.headers
         self.webhook_api_commands = WebHookAPI
 
+    @staticmethod
+    async def on_request_start(session, context, params):
+        logging.getLogger('aiohttp.client').debug(f'Starting request <{params}>')
+
     async def post_request(self, data, timeout=30):
+        logging.basicConfig(level=logging.DEBUG)
+        trace_config = aiohttp.TraceConfig()
+        trace_config.on_request_start.append(self.on_request_start)
         try:
-            async with aiohttp.ClientSession() as session:
+            async with aiohttp.ClientSession(trace_configs=[trace_config]) as session:
                 async with session.post(
                         url=self.url,
                         headers=self.headers,
@@ -30,6 +34,7 @@ class Server1CRequests:
                 ) as response:
                     print(response.status)
                     if self.is_OK(response):
+                        print(await response.json())
                         return await response.json()
         except Exception as _ex:
             print(f"ERROR FROM SERVER: {_ex}")
