@@ -44,16 +44,19 @@ class OrdersEngineDB:
         return result
 
     async def db_insert_orders_data(self, orders):
-        values = RowWrapper(data=orders).create_matrix()
-        print(values)
-        async with self.pool.acquire() as connection:
-            async with connection.cursor(DictCursor) as cursor:
-                await cursor.executemany(
-                    OrdersSQL.insert_data_query,
-                    values
-                )
-        '''self.pool.close()
-        await self.pool.wait_closed()'''
+        try:
+            values = RowWrapper(data=orders).create_matrix()
+            print(values)
+            async with self.pool.acquire() as connection:
+                async with connection.cursor(DictCursor) as cursor:
+                    await cursor.executemany(
+                        OrdersSQL.insert_data_query,
+                        values
+                    )
+            '''self.pool.close()
+            await self.pool.wait_closed()'''
+        except Exception as _ex:
+            print(_ex)
 
     async def db_insert_order_data(self, order_from_db):
         values = InsertValues(db_row_data=order_from_db)

@@ -1,7 +1,14 @@
 class RowWrapper:
     def __init__(self, data):
         self.data = data
-        self.keys = list(data[0].keys())
+        self.keys = self.get_keys()
+
+    def get_keys(self):
+        if len(self.data) != 0:
+            keys = list(self.data[0].keys())
+            return keys
+        else:
+            return -1
 
     def create_tuple(self, row):
         _tuple = tuple()
