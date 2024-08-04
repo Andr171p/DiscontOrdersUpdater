@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0.5 updater+Procfile">
+    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0.7 updater+Procfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server1C/webhook_exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/server1C/webhook_exchange.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,7 @@
     "Python.goods_parser.executor": "Run",
     "Python.main.executor": "Run",
     "Python.site_requests.executor": "Run",
+    "Python.utils.executor": "Run",
     "Python.webhook_exchange.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -52,29 +54,7 @@
       <recent name="C:\Users\andre\LLamaChatBot" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.webhook_exchange">
-    <configuration name="chat_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LLamaChatBot" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/chat_bot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.utils">
     <configuration name="goods_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LLamaChatBot" />
       <option name="ENV_FILES" value="" />
@@ -141,6 +121,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LLamaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="webhook_exchange" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LLamaChatBot" />
       <option name="ENV_FILES" value="" />
@@ -165,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.webhook_exchange" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.goods_parser" />
         <item itemvalue="Python.site_requests" />
-        <item itemvalue="Python.chat_bot" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722573022245</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.0.6 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1722717147746</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722717147746</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.0.7 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1722718325359</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722718325359</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +265,8 @@
     <MESSAGE value="1.0.3 updater+Procfile" />
     <MESSAGE value="1.0.4 updater+Procfile" />
     <MESSAGE value="1.0.5 updater+Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.5 updater+Procfile" />
+    <MESSAGE value="1.0.6 updater+Procfile" />
+    <MESSAGE value="1.0.7 updater+Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.7 updater+Procfile" />
   </component>
 </project>

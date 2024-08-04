@@ -47,6 +47,16 @@ class Server1CRequests:
         else:
             return False
 
+    async def is_not_None(self, response, data, timeout=30):
+        if response is not None:
+            return response
+        else:
+            await asyncio.sleep(timeout)
+            await self.post_request(
+                data=data
+            )
+            await self.is_not_None(response, data)
+
     async def get_order_response(self, phone_number):
         telefon = format_phone_number(
             phone_number=phone_number
@@ -66,6 +76,10 @@ class Server1CRequests:
             'active': 'true'
         }
         response = await self.post_request(
+            data=data
+        )
+        response = self.is_not_None(
+            response=response,
             data=data
         )
         return response
