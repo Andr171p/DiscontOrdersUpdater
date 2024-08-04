@@ -78,7 +78,7 @@ class Server1CRequests:
         response = await self.post_request(
             data=data
         )
-        response = self.is_not_None(
+        response = await self.is_not_None(
             response=response,
             data=data
         )
@@ -113,5 +113,5 @@ class Server1CRequests:
         return response
 
 
-r = asyncio.run(Server1CRequests().get_orders_response())
-'''print(r)'''
+'''r = asyncio.run(Server1CRequests().get_orders_response())
+print(r)'''
