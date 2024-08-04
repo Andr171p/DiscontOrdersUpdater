@@ -78,11 +78,11 @@ class Server1CRequests:
         response = await self.post_request(
             data=data
         )
-        response = await self.is_not_None(
+        result = await self.is_not_None(
             response=response,
             data=data
         )
-        return response
+        return result
 
     async def get_flyer_response(self, phone_number):
         telefon = format_phone_number(
