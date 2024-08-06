@@ -23,10 +23,10 @@ class OrdersEngineDB:
                 database=self.access_db.database,
                 cursorclass=pymysql.cursors.DictCursor
             )
-            print("[SuchefOrdersDB : db_connect] :\n"
+            print("[OrdersDB : db_connect] :\n"
                   "connection successfully..")
         except Exception as _ex:
-            print(f"[SuchefOrdersDB : db_connect] :\n"
+            print(f"[OrdersDB : db_connect] :\n"
                   f"{_ex}")
 
     def db_create_orders_table(self):
