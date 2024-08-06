@@ -13,10 +13,10 @@ async def db_loop_update_orders_data(timeout=SettingsDB.update_timeout):
     orders_at_the_moment = OrdersAtTheMoment()
     # first orders transaction:
     orders = await orders_at_the_moment.orders_at_the_moment()
-    await orders_engine_db.db_insert_orders_data(orders=orders)
+    orders_engine_db.db_insert_orders_data(orders=orders)
     # start update database:
     while True:
         new_orders = await OrdersAtTheMoment().orders_at_the_moment()
-        await orders_engine_db.db_update_orders_data(orders=new_orders)
+        orders_engine_db.db_update_orders_data(orders=new_orders)
         # wait timeout:
         await asyncio.sleep(timeout)
