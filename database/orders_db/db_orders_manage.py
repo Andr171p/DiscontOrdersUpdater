@@ -1,6 +1,6 @@
 import pymysql
 
-from database.db_config import RailwayAccessDB
+from database.db_config import RailwayAccessDB, AccessDB
 from database.orders_db.db_orders_sql import OrdersSQL
 
 from misc.row_wrapper import RowWrapper, InsertValues
@@ -10,7 +10,7 @@ from misc.utils import DataUtils
 
 class OrdersEngineDB:
     def __init__(self):
-        self.access_db = RailwayAccessDB()
+        self.access_db = AccessDB()
         self.connection = None
 
     def db_connect(self):
