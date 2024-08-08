@@ -1,4 +1,4 @@
-import aiomysql
+'''import aiomysql
 
 from database.db_loader import create_event_loop
 from database.db_config import RailwayAccessDB
@@ -21,4 +21,4 @@ async def connect():
     )
 
 
-db_connect = loop.run_until_complete(connect())
+db_connect = loop.run_until_complete(connect())'''

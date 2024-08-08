@@ -10,7 +10,7 @@ from misc.utils import DataUtils
 
 class OrdersEngineDB:
     def __init__(self):
-        self.access_db = AccessDB()
+        self.access_db = RailwayAccessDB
         self.connection = None
 
     def db_connect(self):
