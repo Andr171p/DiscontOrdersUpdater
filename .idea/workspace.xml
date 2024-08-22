@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0.15 updater+Procfile">
+    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="1.0.16 updater+Procfile">
+      <change afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/root.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/order_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db_connect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/orders_db/db_orders_manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/orders_db/db_orders_sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/orders_db/db_update_orders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/orders_db/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/format_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/row_wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server1C/webhook_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server1C/webhook_exchange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/warns.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +48,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -37,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.chat_bot.executor": "Run",
+    "Python.engine.executor": "Run",
     "Python.goods_parser.executor": "Run",
     "Python.main.executor": "Run",
     "Python.order_status.executor": "Run",
@@ -54,8 +81,8 @@
       <recent name="C:\Users\andre\LLamaChatBot" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="goods_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.engine">
+    <configuration name="engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LLamaChatBot" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,11 +91,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parser" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/goods_parser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/engine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.engine" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.order_status" />
         <item itemvalue="Python.webhook_exchange" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.goods_parser" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723095238590</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1.0.16 updater+Procfile">
+      <option name="closed" value="true" />
+      <created>1723095565276</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723095565276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -339,6 +374,7 @@
     <MESSAGE value="1.0.13 updater+Procfile" />
     <MESSAGE value="1.0.14 updater+Procfile" />
     <MESSAGE value="1.0.15 updater+Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.15 updater+Procfile" />
+    <MESSAGE value="1.0.16 updater+Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.16 updater+Procfile" />
   </component>
 </project>
