@@ -1,15 +1,14 @@
-from sqlmodel import SQLModel, Field
+from sqlalchemy import Column
+from sqlalchemy import String
+from sqlalchemy import Integer
+
+from database.base import base
 
 
-class UsersBase(SQLModel):
-    user_id: int
-    username: str
-    telefon: str
+class Users(base):
+    __tablename__ = "users"
 
-
-class Users(UsersBase, table=True):
-    id: int = Field(default=None, nullable=False, primary_key=True)
-
-
-class UsersCreate(UsersBase):
-    pass
+    id = Column(Integer, autoincrement=True, primary_key=True, index=True)
+    user_id = Column(Integer, unique=True)
+    username = Column(String)
+    telefon = Column(String)
