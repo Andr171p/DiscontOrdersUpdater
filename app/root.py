@@ -1,8 +1,8 @@
-import contextlib
-from typing import AsyncIterator
-
-import uvicorn
 from fastapi import FastAPI
+
+import contextlib
+
+from typing import AsyncIterator
 
 from database.manage import init_models
 
@@ -13,7 +13,6 @@ from app.api import router
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     await init_models()
     yield
-    await orm.db_manager.close()
 
 
 app = FastAPI(title="Registration in database API", lifespan=lifespan)
