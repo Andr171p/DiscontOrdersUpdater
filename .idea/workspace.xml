@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="2.0">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cmd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/manage.py" afterDir="false" />
+    <list default="true" id="50c5bc25-1f28-427d-aa8f-06f860717eb9" name="Changes" comment="2.1">
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724452845234</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2.1">
+      <option name="closed" value="true" />
+      <created>1724530514345</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1724530514345</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -378,6 +380,7 @@
     <MESSAGE value="1.0.15 updater+Procfile" />
     <MESSAGE value="1.0.16 updater+Procfile" />
     <MESSAGE value="2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0" />
+    <MESSAGE value="2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1" />
   </component>
 </project>
