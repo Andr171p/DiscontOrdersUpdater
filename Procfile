@@ -1,1 +1,0 @@
-RegistrationService: uvicorn main:app --reload
