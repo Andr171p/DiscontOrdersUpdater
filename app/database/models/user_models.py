@@ -20,3 +20,6 @@ class UsersModel(AbstractModel):
     user_id: Mapped[int] = mapped_column(BigInteger)
     username: Mapped[str] = mapped_column()
     telefon: Mapped[str] = mapped_column()
+
+    def __repr__(self) -> str:
+        return f"User(id={self.id!r}, user_id={self.user_id!r}, username={self.username!r}, telefon={self.telefon!r})"

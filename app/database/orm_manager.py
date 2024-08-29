@@ -3,7 +3,7 @@ from typing import List
 from sqlalchemy import select
 
 from app.database.db import db_manager, get_session, DatabaseSessionManager
-from app.database.models.users_model import AbstractModel, UsersModel
+from app.database.models.user_models import AbstractModel, UsersModel
 
 
 class ORMManager(DatabaseSessionManager):
@@ -18,7 +18,7 @@ class ORMManager(DatabaseSessionManager):
 
     async def create_user(
             self, user_id: int, username: str, telefon: str
-    ) -> None:
+    ):
         async with self.session() as session:
             user = UsersModel(
                 user_id=user_id,
@@ -27,6 +27,8 @@ class ORMManager(DatabaseSessionManager):
             )
             session.add(user)
             await session.commit()
+            await session.refresh(user)
+        return user
 
     async def get_user(self, user_id: int) -> UsersModel:
         async with self.session() as session:
@@ -42,8 +44,16 @@ class ORMManager(DatabaseSessionManager):
             )
             return users.scalars().all()
 
+    async def clear_table(self):
+        async with self.connect() as connection:
+            await connection.run_sync(UsersModel.metadata.drop_all)
+            await connection.run_sync(UsersModel.metadata.create_all)
 
-import asyncio
+
+orm_manager = ORMManager()
+
+
+'''import asyncio
 orm = ORMManager()
-r = asyncio.run(orm.get_user(user_id=123))
-print(r)
+r = asyncio.run(orm.get_users())
+print(r)'''
